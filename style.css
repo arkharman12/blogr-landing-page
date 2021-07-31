@@ -85,7 +85,7 @@ ul li {
 }
 
 .nav-btns-wrapper img {
-    display: none;
+    display: none; 
 }
 
 .sub-hero-wrapper {
@@ -290,6 +290,126 @@ ul li {
 .footer-wrapper ul li:not(:first-child) {
     color: var(--grayish-blue);
     margin-bottom: 10px;
+}
+
+/* Media queries */
+@media (max-width: 1280px) {
+    .content-two {
+        margin: -10px 0 0 50px;
+    }
+    
+    .content-two h3 {
+        font-size: 28px;
+    }
+    
+    .content-two p {
+        line-height: 1.5;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .nav-logo-links-wrapper :not(:first-child), .nav-btns-wrapper a {
+        display: none;
+    }
+
+    .nav-btns-wrapper img {
+        display: block; 
+        cursor: pointer;
+    }
+
+    .bottom-list {
+        margin-top: 20px;
+    }
+
+    .bottom-list hr {
+        height: 2px;
+        background-color: var(--grayish-blue);
+        border: none; 
+        margin: 0 30px 30px 30px;
+    }
+
+    .bottom-list .ham-cta {
+        display: inline-block;
+        color: var(--white);
+        background-color: var(--light-red);
+        font-weight: bold;
+        padding: 14px 45px;
+        margin-top: 15px;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    /* Hamburger menu */
+    .nav-overlay {
+        height: 80%;
+        width: 50%;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 10%;
+        left: 25%;
+        background-color: var(--white);
+        border-radius: 10px;
+    }
+      
+    .overlay-content {
+        font-family: "Overpass", sans-serif;
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+    
+    .nav-overlay a, .nav-overlay #close-btn {
+        padding: 8px;
+        text-decoration: none;
+        color: var(--very-dark-blue);
+        display: block;
+    }
+
+    .nav-overlay #close-btn {
+        background-color: var(--very-light-red);
+        border-radius: 3px;
+        position: absolute;
+        top: 5%;
+        right: 8%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .left-content-image, .right-content-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .content-one, .content-three {
+        margin-top: 100px;
+        padding: 0 100px 0 120px;
+    }
+
+    .image-one img {
+        height: 500px;
+        width: 550px;
+        margin: 0;
+    }
+    
+    .image-three img {
+        height: 500px;
+        width: 600px;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+
 }
 
 
