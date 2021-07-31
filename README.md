@@ -15,4 +15,4 @@ Your users should be able to:
 
 
 ## My solution
-[Link](www.google.com)
+[View](https://arkharman12.github.io/blogr-landing-page/)
