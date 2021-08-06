@@ -172,6 +172,45 @@ ul li {
     color: var(--very-dark-black-blue);
 }
 
+/* Hamburger menu */
+.nav-overlay {
+    height: 80%;
+    width: 50%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    left: 25%;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+  
+.overlay-content {
+    font-family: "Overpass", sans-serif;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.nav-overlay a, .nav-overlay #close-btn {
+    padding: 8px;
+    text-decoration: none;
+    color: var(--very-dark-blue);
+    display: block;
+}
+
+.nav-overlay #close-btn {
+    cursor: pointer;
+    background-color: var(--very-light-red);
+    border-radius: 3px;
+    position: absolute;
+    top: 5%;
+    right: 8%;
+}
+
 #my-nav {
     display: none;
 }
@@ -349,44 +388,6 @@ ul li {
         margin-top: 15px;
         border-radius: 50px;
         text-align: center;
-    }
-
-    /* Hamburger menu */
-    .nav-overlay {
-        height: 80%;
-        width: 50%;
-        display: none;
-        position: fixed;
-        z-index: 1;
-        top: 10%;
-        left: 25%;
-        background-color: var(--white);
-        border-radius: 10px;
-    }
-      
-    .overlay-content {
-        font-family: "Overpass", sans-serif;
-        position: relative;
-        top: 25%;
-        width: 100%;
-        text-align: center;
-        margin-top: 30px;
-        font-weight: bold;
-    }
-    
-    .nav-overlay a, .nav-overlay #close-btn {
-        padding: 8px;
-        text-decoration: none;
-        color: var(--very-dark-blue);
-        display: block;
-    }
-
-    .nav-overlay #close-btn {
-        background-color: var(--very-light-red);
-        border-radius: 3px;
-        position: absolute;
-        top: 5%;
-        right: 8%;
     }
     
 }
